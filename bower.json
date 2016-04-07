@@ -1,0 +1,21 @@
+{
+  "name": "contacts",
+  "description": "Application to store contacts",
+  "main": "index.js",
+  "authors": [
+    "Mustafa N Dwaikat"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "contacts",
+    "people",
+    "javascript"
+  ],
+  "homepage": "https://github.com/mirageisme/contacts",
+  "moduleType": [],
+  "dependencies": {
+    "angular": "^1.5.0",
+    "bootstrap": "^3.3.6",
+    "angular-route": "^1.5.0"
+  }
+}

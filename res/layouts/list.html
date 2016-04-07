@@ -1,0 +1,19 @@
+<div class="form-group">
+    <input class="form-control" placeholder="Search Contacts" ng-model="value"/>
+</div>
+<div class="media contact-card" ng-repeat="contact in contactsList | filter:value">
+    <a href="#/showContact/{{contact.id}}">
+        <div class="media-left">
+            <img class="media-object" ng-src="{{contact.image || 'images/profile-placeholder.gif'}}"
+                 alt="{{contact.firstName}} {{contact.lastName}}">
+        </div>
+
+        <div class="media-body">
+
+            <h4 class="media-heading">{{contact.firstName}} {{contact.lastName}}</h4>
+            <span><strong>Phone: </strong><span>{{contact.phone}}</span></span><br/>
+            <span><strong>Email: </strong><span>{{contact.email}}</span></span>
+
+        </div>
+    </a>
+</div>
